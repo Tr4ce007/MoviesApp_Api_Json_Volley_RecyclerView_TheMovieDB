@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MoviesApp</string>
+    <string name="API_KEY">c3615c272afa7c2a0c196b5a9bcda8bb</string>
+    <string name="PRE_API">https://api.themoviedb.org/3/movie/</string>
+    <string name="PRE_IMG">https://image.tmdb.org/t/p/w200</string>
+    <string name="Now_Playing">https://api.themoviedb.org/3/movie/now_playing?api_key=c3615c272afa7c2a0c196b5a9bcda8bb</string>
+</resources>

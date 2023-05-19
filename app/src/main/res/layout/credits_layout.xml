@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:elevation="8dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="2dp"
+            android:background="@color/cube_orange"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="3dp"
+                android:background="@color/cube_orange"
+                android:src="@mipmap/ic_launcher"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="fitXY"
+                android:id="@+id/creditsImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="202dp"/>
+            <TextView
+                android:layout_margin="3dp"
+                android:hint="Gal Gadot"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:id="@+id/creditsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

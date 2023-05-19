@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cube_orange">#f48806</color>
+    <color name="cube_pink_red">#fa5814</color>
+    <color name="cube_blue">#05417d</color>
+    <color name="cube_purple">#b250f7</color>
+    <color name="bg">#ABEFE9</color>
+</resources>

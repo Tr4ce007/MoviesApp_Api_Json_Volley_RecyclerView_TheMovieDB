@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ScrollView
+        android:background="@color/bg"
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:elevation="10dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="5dp"
+                android:id="@+id/detailCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/cube_purple"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:scaleType="fitXY"
+                        android:id="@+id/detailsImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="202dp"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:shadowColor="@color/black"
+                            android:shadowRadius="50"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:id="@+id/detailMovieName"
+                            android:hint="Evil Dead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/detailOverView"
+                            android:textSize="18sp"
+                            android:maxLines="7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Evil Dead is a horror movie." />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:textSize="20sp"
+                android:shadowColor="@color/black"
+                android:shadowRadius="25"
+                android:layout_margin="5dp"
+                android:id="@+id/creditsText"
+                android:textStyle="bold"
+                android:text="Credits"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="5dp"
+                android:id="@+id/rViewCredits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:shadowColor="@color/black"
+                android:shadowRadius="25"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:id="@+id/reviewsText"
+                android:text="Reviews"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="5dp"
+                android:id="@+id/rViewReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="20sp"
+                android:shadowColor="@color/black"
+                android:shadowRadius="25"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:id="@+id/similarText"
+                android:text="Similar Movies"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="5dp"
+                android:id="@+id/rViewSimilar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/similarText" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
